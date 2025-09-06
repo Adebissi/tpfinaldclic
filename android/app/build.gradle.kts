@@ -25,7 +25,7 @@ android {
         applicationId = "com.example.testfirebase"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = 23
+        minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -45,7 +45,8 @@ flutter {
 }
 
 dependencies {
-    implementation(platform("com.google.firebase:firebase-bom:32.2.3"))
+    implementation(platform("com.google.firebase:firebase-bom:32.2.3"));
+    implementation("androidx.exifinterface:exifinterface:1.3.7")
 
 }
 
